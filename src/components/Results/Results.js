@@ -8,12 +8,12 @@ export default function Results(props) {
 			<tr>
 				<td>
 					<button>
-						<a target="_blank">Play</a>
+						<a href={props.item.previewUrl} target="_blank">Play</a>
 					</button>
 				</td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>{props.item.trackName}</td>
+				<td>{props.item.artistName}</td>
+				<td>{props.item.collectionName}</td>
 				<td><img alt="Album Cover"/></td>
 				<td></td>
 				<td>$</td>
